@@ -1,7 +1,5 @@
 
-
-document.getElementById('calculate-btn').addEventListener('click', function () {
-
+function totalExpenses() {
     const message = "Please, input a valid number greater then 0.";
     const expenseMessage = "Please, check your input items, there may be any issue.";
 
@@ -10,6 +8,8 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     let getFoodInput = parseInt(document.getElementById('input-food').value);
     let getRentInput = parseInt(document.getElementById('input-rent').value);
     let getClothesInput = parseInt(document.getElementById('input-clothes').value);
+
+
 
     if (isNaN(getIncomeInput) == true || getIncomeInput.value == '') {
         document.getElementById('income-message').innerText = message;
@@ -62,5 +62,23 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         document.getElementById('total-expenses').innerText = totalExpenses;
     }
 
+    return totalBalance;
+}
 
+document.getElementById('calculate-btn').addEventListener('click', function () {
+    totalExpenses();
 });
+document.getElementById('save').addEventListener('click', function () {
+
+    const totalBalance = totalExpenses();
+
+    let getSaveInput = parseInt(document.getElementById('input-save').value);
+
+    const savingAmount = totalBalance / 100 * getSaveInput;
+
+    const remainingBalance = totalBalance - savingAmount;
+
+    document.getElementById('saving-amount').innerText = savingAmount;
+    document.getElementById('remaining-balance').innerText = remainingBalance;
+
+})
