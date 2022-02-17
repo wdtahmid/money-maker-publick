@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+:root {
+    --font-patua: 'Patua One', cursive;
+    --color-fancy: #5A20CB;
+    --orange-fancy: #E07C24;
+}
+
+.font-patua {
+    font-family: var(--font-patua);
+}
+
+.color-fancy {
+    color: var(--color-fancy);
+}
+
+.orange-fancy {
+    color: #E07C24;
+}
