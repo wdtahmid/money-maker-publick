@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Patua+One&display=swap');
 
 :root {
     --font-patua: 'Patua One', cursive;
+    --font-abel: 'Abel', sans-serif;
     --color-fancy: #5A20CB;
     --orange-fancy: #E07C24;
+    --bg-fancy: #CAD5E2;
 }
-
+body {
+    font-family: var(--font-abel);
+}
 .font-patua {
     font-family: var(--font-patua);
 }
@@ -16,4 +20,16 @@
 
 .orange-fancy {
     color: #E07C24;
+}
+.bg-fancy {
+    background-color: var(--bg-fancy);
+}
+    
+.font-abel {
+    font-family: 'Abel', sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--color-fancy);
+    border: none;
 }
