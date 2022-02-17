@@ -48,6 +48,7 @@
                                 <input title="Please, put a positive number." type="text" class="form-control"
                                     id="input-income">
                             </div>
+                            <div id="income-message" class="text-danger"></div>
                         </div>
 
                         <!-- expense title -->
@@ -60,6 +61,7 @@
                                 <input title="Please, put a positive number." type="text" class="form-control"
                                     id="input-food">
                             </div>
+                            <div id="food-message" class="text-danger"></div>
                         </div>
 
                         <!-- input for rent -->
@@ -69,6 +71,7 @@
                                 <input title="Please, put a positive number." type="text" class="form-control"
                                     id="input-rent">
                             </div>
+                            <div id="rent-message" class="text-danger"></div>
                         </div>
 
                         <!-- input for clothes -->
@@ -78,21 +81,23 @@
                                 <input title="Please, put a positive number." type="text" class="form-control"
                                     id="input-clothes">
                             </div>
+                            <div id="clothes-message" class="text-danger"></div>
                         </div>
 
                         <!-- calculate button -->
                         <div class="justify-content-center">
-                            <button type="submit" class="btn btn-primary col-sm-4 text-uppercase">calculate</button>
+                            <button id="calculate-btn" type="submit"
+                                class="btn btn-primary col-sm-4 text-uppercase">calculate</button>
                         </div>
 
                         <!-- total expenses and balance -->
                         <div class="my-5">
                             <h3 class="text-capitalize text-center font-abel">Total Expenses: <span
                                     id="total-expenses"></span>
-                                5500
                             </h3>
-                            <h3 class="text-capitalize text-center font-abel">Total Expenses: <span id="balance"></span>
-                                4500</h3>
+                            <div id="balance-message" class="text-danger"></div>
+                            <h3 class="text-capitalize text-center font-abel">Balance: <span id="balance"></span>
+                            </h3>
                         </div>
 
 
