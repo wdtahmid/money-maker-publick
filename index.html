@@ -95,9 +95,10 @@
                             <h3 class="text-capitalize text-center font-abel">Total Expenses: <span
                                     id="total-expenses"></span>
                             </h3>
-                            <div id="balance-message" class="text-danger"></div>
+                            <div id="expense-message" class="text-danger"></div>
                             <h3 class="text-capitalize text-center font-abel">Balance: <span id="balance"></span>
                             </h3>
+                            <div id="balance-message" class="text-danger"></div>
                         </div>
 
 
@@ -105,8 +106,8 @@
                             <!-- input for save -->
                             <label for="input-save" class="col-sm-2 col-form-label">Save:</label>
                             <div class="col-sm-4">
-                                <input title="Please, put a positive number." type="text" class="form-control"
-                                    id="input-save">
+                                <input title="Please, put a positive number less then or equal to 100." type="text"
+                                    class="form-control" id="input-save">
                             </div>
 
                             <div class="col-sm-1">
@@ -118,11 +119,12 @@
                                 <button style="width: 100%;" type="submit" id="save"
                                     class="btn btn-primary text-uppercase">save</button>
                             </div>
+                            <div id="save-input-message" class="text-danger"></div>
 
                             <!-- saving amount and remaining balance -->
                             <div class="my-5">
                                 <h3 class="text-capitalize text-center font-abel">Saving Amount: <span
-                                        id="saving-amount">00</span>
+                                        id="saving-amount"></span>
 
                                 </h3>
                                 <h3 class="text-capitalize text-center font-abel">Remaining Balance: <span
